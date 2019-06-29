@@ -1,6 +1,4 @@
----
-enable html: true
----
+
 # Git同步文件夹
 
 1. 安装Git
@@ -31,3 +29,4 @@ git add . //文件夹内所有文件均上传，可以指定文件来上传
 git commit -m "对此次上传文件的描述"
 git push origin master
 ```
+
