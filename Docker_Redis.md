@@ -26,7 +26,7 @@
     -p 6379:6379 \ # 端口映射 宿主机:容器
     -v /root/docker/redis/data:/data:rw \ # 映射数据目录 rw 为读写
     -v /root/docker/redis/conf/redis.conf:/etc/redis/redis.conf:ro \ # 挂载配置文件 ro 为readonly
-    --privileged=true \ # 给与一些权限
+    --privileged=true \ # 设置挂载目录权限为最大 否则挂载出错
     --name myredis \ # 给容器起个名字
     -d redis redis-server /etc/redis/redis.conf # deamon 运行 服务使用指定的配置文件
 
